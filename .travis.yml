@@ -6,10 +6,8 @@ compiler:
 git:
   depth: 1
 
-before_install:
+script:
     - git clone https://github.com/postgres/postgres.git postgres
     - cd postgres
-
-install:
     - ./configure
     - make
