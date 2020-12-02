@@ -21,6 +21,9 @@ jobs:
           name: Step into the source tree
           command: 'cd postgres'
       - run:
+          name: Debug
+          command: 'ls -al'
+      - run:
           name: Create build config
           command: './configure'
       - run:
