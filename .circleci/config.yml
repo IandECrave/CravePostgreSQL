@@ -22,7 +22,7 @@ jobs:
           command: 'apt-get install -y build-essential'
       - run:
           name: Install other dependencies
-          command: 'apt-get install -y libreadline-dev && apt-get install -y zlib1g-dev'
+          command: 'apt-get install -y libreadline-dev zlib1g-dev bison'
       - run:
           name: Start building
           command: 'cd ./postgres && ./configure && make -j $(nproc)'
