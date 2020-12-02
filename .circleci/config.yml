@@ -8,7 +8,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: "debian:stretch"
+      - image: "postgres:latest"
     steps:
       - checkout
       - run:
